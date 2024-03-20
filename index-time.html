@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>interview Process</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+        <style>
+            * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Poppins;
+}
+@font-face {
+	font-family: Poppins;
+	src: url(./fonts/Poppins-Medium.ttf);
+}
+.main {
+	width: 100%;
+	height: auto;
+	display: grid;
+	place-items: center;
+	background-color: rgb(245, 245, 245);
+	padding: 50px 0;
+}
+.main .head {
+	font-size: 29px;
+	color: rgba(91, 14, 216, 0.767);
+	position: relative;
+	margin-bottom: 100px;
+	font-weight: 500;
+}
+.main .head::after {
+	content: " ";
+	position: absolute;
+	width: 50%;
+	height: 3px;
+	left: 50%;
+	bottom: -5px;
+	transform: translateX(-50%);
+	background-image: linear-gradient(to right, rgba(91, 14, 216, 0.767), rgba(238, 12, 200, 0.747));
+}
+
+/* Container Css Start  */
+
+.container {
+	width: 70%;
+	height: auto;
+	margin: auto 0;
+	position: relative;
+}
+.container ul {
+	list-style: none;
+}
+.container ul::after {
+	content: " ";
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	left: 50%;
+	top: 0;
+	transform: translateX(-50%);
+	background-image: linear-gradient(to bottom, rgba(91, 14, 216, 0.767), rgba(238, 12, 200, 0.747));
+}
+.container ul li {
+	width: 50%;
+	height: auto;
+	padding: 15px 20px;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.218);
+	position: relative;
+	margin-bottom: 30px;
+	z-index: 99;
+}
+.container ul li:nth-child(4) {
+	margin-bottom: 0;
+}
+.container ul li .circle {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #e100ff7a;
+	top: 0;
+	display: grid;
+	place-items: center;
+}
+.circle::after{
+	content: ' ';
+	width: 12px;
+	height: 12px;
+	background-color: #7f00ff;
+	border-radius: 50%;
+}
+ul li:nth-child(odd) .circle {
+	transform: translate(50%, -50%);
+	right: -30px;
+}
+ul li:nth-child(even) .circle {
+	transform: translate(-50%, -50%);
+	left: -30px;
+}
+ul li .date {
+	position: absolute;
+	width: 130px;
+	height: 33px;
+	background-image: linear-gradient(to right,#7f00ff,#e100ff);
+	border-radius: 15px;
+	top: -45px;
+	display: grid;
+	place-items: center;
+	color: #fff;
+	font-size: 13px;
+	box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.318);
+}
+.container ul li:nth-child(odd) {
+	float: left;
+	clear: right;
+	text-align: right;
+	transform: translateX(-30px);
+}
+ul li:nth-child(odd) .date {
+	right: 20px;
+}
+.container ul li:nth-child(even) {
+	float: right;
+	clear: left;
+	transform: translateX(30px);
+}
+ul li .heading {
+	font-size: 17px;
+	color: rgb(91, 14, 216);
+}
+ul li p {
+	font-size: 13px;
+	color: #666;
+	line-height: 18px;
+	margin: 6px 0 4px 0;
+}
+ul li a {
+	font-size: 13px;
+	text-decoration: none;
+	color: rgb(18, 54, 214);
+	transition: all 0.3s ease;
+}
+
+
+@media only screen and (min-width:798px) and (max-width: 1100px) {
+	.container{
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 798px) {
+	.container{
+		width: 70%;
+		transform: translateX(20px);
+	}
+	.container ul::after{
+		left: -40px;
+	}
+	.container ul li {
+		width: 100%;
+		float: none;
+		clear: none;
+		margin-bottom: 80px;
+	}
+	.container ul li .circle{
+		left: -40px;
+		transform: translate(-50%, -50%);
+	}
+	.container ul li .date{
+		left: 20px;
+	}
+	.container ul li:nth-child(odd) {
+		transform: translateX(0px);
+		text-align: left;
+	}
+	.container ul li:nth-child(even) {
+		transform: translateX(0px);
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	.container{
+		width: 80%;
+	}
+	.container ul::after{
+		left: -20px;
+	}
+	.container ul li .circle{
+		left: -20px;
+	}
+	.view{
+		margin-top: 100px;
+	}
+}
+.icon img{
+	width: 150px;
+}
+        </style>
+    <body>
+        <div class="main">
+            <h3 class="head">Interview Process</h3>
+            <div class="container">
+                <ul>
+                    <li>
+                        <h3 class="heading">Resume Screening</h3>
+						<div class="icon animate fadeInLeft" date-wow-delay=""1.4s>
+                                <img src="https://i1.wp.com/www.zigsaw.in/jobs/wp-content/uploads/2021/03/AAi3k9zRoh.jpg?fit=1000%2C1000&ssl=1" alt="">
+                            </div>
+                        <p>The initial stage involves recruiters or hiring managers reviewing candidates' resumes to assess their qualifications, experience, and skills relevant to the job role.</p>
+                        <a href="#">Read More ></a>
+                        <span class="date">Resume Screening</span>
+                        <span class="circle"></span>
+                    </li>
+                    <li>
+                        <h3 class="heading">Video Screening</h3>
+						<div class="icon animate fadeInLeft">
+                                <img src="https://www.shineinterview.com/wp-content/uploads/2023/01/One-way-video-interview.png" alt="">
+                            </div>
+                        <p>Shortlisted candidates may undergo a phone or video interview with a recruiter or hiring manager. This stage usually focuses on discussing the candidate's background, experience, and interest in the position.</p>
+                        <a href="#">Read More ></a>
+                        <span class="date">Video Screening</span>
+                        <span class="circle"></span>
+                    </li>
+                    <li>
+                        <h3 class="heading">Technical Assessment</h3>
+						<div class="icon animate fadeInLeft">
+                                <img src="https://cdn.wedevs.com/uploads/2020/05/How-Business-Technology-Assessment-Can-Take-Your-Business-to-a-Whole-New-Level-1.png" alt="">
+                            </div>
+                        <p>Candidates may be asked to complete a technical assessment, which could include coding challenges, problem-solving exercises, or technical questions related to their field of expertise. This stage helps assess candidates' technical abilities and problem-solving skills.</p>
+                        <a href="#">Read More ></a>
+                        <span class="date">Technical Assessment</span>
+                        <span class="circle"></span>
+                    </li>
+                    <li>
+                        <h3 class="heading">On-Site Interview</h3>
+						<div class="icon animate fadeInLeft">
+                                <img src="https://1.bp.blogspot.com/-00YIx9H3dpU/YDzVwZ2sT5I/AAAAAAAAAAM/rHObXLSx7oM2lGvIuBV8Ym7g-fU8lORBgCLcBGAsYHQ/w640-h428/interview.jpg" alt="">
+                            </div>
+                        <p>Candidates who pass the technical assessment may be invited for on-site interviews or panel interviews with members of the hiring team. These interviews typically delve deeper into the candidate's technical knowledge, experience, and fit for the team and company culture.</p>
+                        <a href="#">Read More ></a>
+                        <span class="date">On-Site Interview</span>
+                        <span class="circle"></span>
+                    </li>
+					<li class="view">
+                        <h3 class="heading">Behavioral Interview</h3>
+						<div class="icon animate fadeInLeft">
+                                <img src="https://www.peoplescout.com/wp-content/uploads/2020/06/Behavioral-interview-square.jpg" alt="">
+                            </div>
+                        <p>In addition to technical skills, candidates may be evaluated on their behavioral competencies, such as communication, teamwork, adaptability, and problem-solving. Behavioral interviews aim to assess how candidates handle various situations and interact with others in the workplace.</p>
+                        <a href="#">Read More ></a>
+                        <span class="date">Behavioral Interview</span>
+                        <span class="circle"></span>
+                    </li>
+					<li>
+                        <h3 class="heading">Final Interview</h3>
+						<div class="icon animate fadeInLeft">
+                                <img src="https://cms-assets.themuse.com/media/lead/_1200x630_crop_center-center_82_none/22698.jpg?mtime=1568847033" alt="">
+                            </div>
+                        <p>The final stage of the interview process may involve a final round of interviews with senior leadership or decision-makers within the company. This stage allows candidates to demonstrate their fit for the role and organization and provides an opportunity for both parties to ask any remaining questions.</p>
+                        <a href="#">Read More ></a>
+                        <span class="date">Final Interview</span>
+                        <span class="circle"></span>
+                    </li>
+					<li>
+                        <h3 class="heading">Offer & Negotiation</h3>
+						<div class="icon animate fadeInLeft">
+                                <img src="https://templatelab.com/wp-content/uploads/2019/01/salary-negotiation-letter-13.jpg" alt="">
+                            </div>
+                        <p>If the candidate successfully completes the interview process and receives a positive evaluation, they may receive a job offer from the company. This stage involves negotiating terms such as salary, benefits, start date, and any other relevant details.</p>
+                        <a href="#">Read More ></a>
+                        <span class="date">Offer & Negotiation</span>
+                        <span class="circle"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav_menu" id="nav_menu">
+        <ul class="nav_list">
+            <li class="nav_item">
+                <a href="index.html" class="nav_link active-link">
+                    <i class='bx bx-home'></i>
+                <span class="nav_name">Home</span>
+                </a>
+            </li>
+            <li class="nav_item">
+                <a href="index-reel.html" class="nav_link" ><img src="video-svg.svg" alt="">
+                    <span class="nav_name">Reels</span>
+                </a>
+            </li>
+            <li class="nav_item">
+                <a href="index-1.html" class="nav_link"><i class='bx bxs-videos'></i>
+                    <span class="nav_name">Videos</span>
+                </a>
+            </li>
+            <li class="nav_item" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">
+            <a href="#contact" class="nav_link"><i class='bx bx-message-square-detail'></i>
+                <span class="nav_name">Contact</span>
+                </a>
+            </li>
+            <li class="nav_item" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+                <a href="#about" class="nav_link"><i class='bx bxs-user'></i>
+                <span class="nav_name">Account</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+	<!-- login form -->
+    <div id="id01" class="modal">
+    <form class="modal-content animate" action="" method="post" name="login-form">
+    <div class="imgcontaier">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close"title="Close Modal">&times;</span>
+    <img src="http://www.clker.com/cliparts/f/a/0/c/1434020125875430376profile.png"alt="Avatar" class="avatar">
+    </div>
+    <div class="con">
+      <label for="username"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="username" required>
+
+      <label for="password"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="passwords" required>
+        
+      <button type="submit" value="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="con" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<!-- Contact form -->
+<div id="id02" class="modal">
+  
+  <form class="modal-content animate" action="connect.php" method="POST">
+    <div class="imgcontaier">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+    <div class="con">
+      <label for="name"><b>Name</b></label>
+      <input type="text" placeholder="Your Full Name" name="name" required>
+
+      <label for="email"><b>Email</b></label>
+      <input type="email" placeholder="Valid Email Address" name="email" required>
+      <label for="text"><b>Message:</b></label>
+      <textarea type="text" name="massage" id="massage" cols="31" rows="8" placeholder="write here"></textarea>
+      <label for="subject"><b>Subject:</b></label>
+      <input type="text" name="subject" placeholder="Any Inquiry" required> </p>
+        
+      <button type="submit" value="submit">Send</button>
+    </div>
+  </form>
+</div>
+</body>
+<script src="script.js"></script>
+</html>

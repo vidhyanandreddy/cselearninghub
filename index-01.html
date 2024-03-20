@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>ALL_SEMESTERS_NOTES</title>
+</head>
+<body>
+    <header>
+         <nav>
+        <div class="nav-center">
+            <!-- nav header -->
+            <div class="nav-header">
+                <!-- <img src="./logo.svg" class="logo" alt="logo" /> -->
+                <h1>CSE Learning Hub</h1>
+                <button class="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <!-- links -->
+            <ul class="links">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="index-01.html">Materials</a>
+                </li>
+                <li>
+                    <a href="index-11.html">Tech Stack</a>
+                </li>
+                <li>
+                    <a href="index-0.html">Roadmaps & Resources</a>
+                </li>
+            </ul>
+            <!-- social media -->
+            <ul class="social-icons">
+                <li>
+                    <a href="index.html">
+                       <i class='bx bx-home'></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="index-reel.html"><i class='bx bx-news'></i></a>
+                </li>
+                <li>
+                    <a href="index-1.html"><i class='bx bxs-videos'></i></a>
+                </li>
+                <li onclick="document.getElementById('id02').style.display='block'" style="width:auto;">
+                    <a href="#contact"><i class='bx bx-message-square-detail'></i></a>
+                </li>
+                <li onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+                    <a href="#about">
+                       <i class='bx bxs-user'></i>
+                    </a>
+                </li>
+                <li class="mode" onclick="dark()"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#3da0f0">
+<path d="M21.5 14.0784C20.3003 14.7189 18.9301 15.0821 17.4751 15.0821C12.7491 15.0821 8.91792 11.2509 8.91792 6.52485C8.91792 5.06986 9.28105 3.69968 9.92163 2.5C5.66765 3.49698 2.5 7.31513 2.5 11.8731C2.5 17.1899 6.8101 21.5 12.1269 21.5C16.6849 21.5 20.503 18.3324 21.5 14.0784Z" stroke="#3da0f0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></li>
+            </ul>
+        </div>
+    </nav>
+    </header>
+    <div class="scrollbar">
+        <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 24 24" fill="gold" class="injected-svg"
+            data-src="/icons/label-important-stroke-rounded.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img"
+            color="#000000">
+            <path d="M13 4H6.23456C3.79424 4 2.57407 4 2.14438 4.76649C2.13129 4.78984 2.11883 4.81353 2.10701 4.83754C1.71893 5.62592 2.41032 6.63129 3.7931 8.64204C4.89612 10.246 5.44763 11.048 5.4611 11.9555C5.46154 11.9852 5.46154 12.0148 5.4611 12.0445C5.44763 12.952 4.89612 13.754 3.7931 15.358C2.41032 17.3687 1.71893 18.3741 2.10701 19.1625C2.11883 19.1865 2.13129 19.2102 2.14438 19.2335C2.57407 20 3.79424 20 6.23456 20H13C14.9628 20 15.9443 20 16.7889 19.5777C17.6334 19.1554 18.2223 18.3703 19.4 16.8C21.1333 14.4889 22 13.3333 22 12C22 10.6667 21.1333 9.51111 19.4 7.2C18.2223 5.62972 17.6334 4.84458 16.7889 4.42229C15.9443 4 14.9628 4 13 4Z"
+                stroke="gold" stroke-width="1.5"></path>
+        </svg>
+        <marquee>&#127775 All Semester's Syllabus copies are available here!...and Materials also available!... &#127775 You can Download it....</marquee>
+    </div>
+    <div class="loader">
+    <div></div>
+   </div>
+   <div class="wrapper">
+            <div class="lablel">
+                <input type="radio" name="slider" id="materials" checked>
+                <input type="radio" name="slider" id="pqp">
+                <input type="radio" name="slider" id="manuals">
+                <!-- <input type="radio" name="slider" id="contact"> -->
+                <div class="subnav">
+                    <label for="materials" class="materials">R20 Materials</label>
+                    <label for="pqp" class="pqp">PQP</label>
+                    <label for="manuals" class="manuals">Lab Manuals</label>
+                    <!-- <label for="contact" class="contact">Software Engineer</label> -->
+                    <div class="slider"></div>
+                </div>
+                <section>
+                    <div class="content content1">
+                        <span class="anim"><b>CSE R20 All Semester's Materials</b></span>
+            <!-- <p class="anim">Everyone should learn how to code, it teaches you how to think.....</p> -->
+            <div class="grid anim">         
+                <div class="item">
+                    <div class="item-lang">I-I Semester</div>
+                    <button class="btn green"><a href="https://drive.google.com/file/d/1nHA5PH7ZIKfjmxfp3G2Acv1KoMcHZtYk/view?usp=drivesdk" download="Btech CSE 1-1 Semester Syllabus.pdf">Download Syllabus</a> <i class="fa fa-download"></i></button>
+                    <button class="btn blue"><a href="https://drive.google.com/drive/folders/1eXZ5d7yaWwd7h-yY1BfGRPXu2ws2sCd2" download="I-I Semester.folder">Download Material</a> <i class="fa fa-download"></i></button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">I-II Semester</div>
+                    <button class="btn green"><a href="https://drive.google.com/file/d/1n2chb1W2yJ7-wZLpVzcP0X1bqbe_hHv5/view?usp=drivesdk" download="Btech CSE 1-2 Semester Syllabus.pdf">Download Syllabus</a> <i class="fa fa-download"></i></button>
+                    <button class="btn blue"><a href="https://drive.google.com/drive/folders/1emqLEjEN7G9l1G34r8b3bidrgykVev4b" download="I-II Semester.folder">Download Material</a> <i class="fa fa-download"></i></button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">II-I Semester</div>
+                    <button class="btn green"><a href="https://drive.google.com/file/d/1mwX85kfuFqGIFJnSKTeqELCG-rNQevet/view?usp=drivesdk" download="Btech CSE 2-1 Semester Syllabus.pdf">Download Syllabus</a> <i class="fa fa-download"></i></button>
+                    <button class="btn blue"><a href="https://drive.google.com/drive/folders/1OxkuAwu0JtfaDy5gJmCcVCAyifFokiYV" download="II-I Semester.folder">Download Material</a> <i class="fa fa-download"></i></button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">II-II Semester</div>
+                    <button class="btn green"><a href="https://drive.google.com/file/d/1rHAJLHepL-8IZsA4WsunPyw6Mcchw0j5/view?usp=drivesdk" download="Btech CSE 2-2 Semester Syllabus.pdf">Download Syllabus</a> <i class="fa fa-download"></i></button>
+                    <button class="btn blue"><a href="https://drive.google.com/drive/folders/1cyTbX-EzO7r20hscG1lwjsU683TBN2oQ" download="II-II Semester.folder">Download Material</a> <i class="fa fa-download"></i></button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">III-I Semester</div>
+                    <button class="btn green"><a href="https://drive.google.com/file/d/1mewPsaJ60bAl4KVUa9NXmIHiVszgJxx3/view?usp=drivesdk" download="Btech CSE 3-1 Semester Syllabus.pdf">Download Syllabus</a> <i class="fa fa-download"></i></button>
+                    <button class="btn blue"><a href="https://drive.google.com/drive/folders/1epDCavS7ED-zQ-FNgd90I658jjjB-Ypd" download="III-I Semester.folder">Download Material</a> <i class="fa fa-download"></i></button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">III-II Semester</div>
+                    <button class="btn green"><a href="https://drive.google.com/file/d/1miAifUn2CQj0ygjOakfMIb3zvus1eFse/view?usp=drivesdk" download="Btech CSE 3-2 Semester Syllabus.pdf">Download Syllabus</a> <i class="fa fa-download"></i></button>
+                    <button class="btn blue"><a href="https://drive.google.com/drive/folders/1eq0K7tjuDbtdr_3Ld2uMKn8d86o8Eto7" download="III-II Semester.folder">Download Material</a> <i class="fa fa-download"></i></button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">IV-I Semester</div>
+                    <button class="btn green"><a href="https://drive.google.com/file/d/1nFyiYnYesNCJ0YfAYigoNlwxezYBYmJ0/view?usp=drivesdk" download="Btech CSE 4-1 Semester Syllabus.pdf">Download Syllabus</a> <i class="fa fa-download"></i></button>
+                    <button class="btn blue"><a href="https://drive.google.com/drive/folders/1ergu0o1_9KLxYYNX2Rf50r4kyKzpMUD6" download="IV-I Semester.folder">Download Material</a> <i class="fa fa-download"></i></button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">IV-II Semester</div>
+                    <button class="btn green"><a href="https://drive.google.com/file/d/1nFYRB5jdQYkGPoUARbLEx0aTWT8lXiwn/view?usp=drivesdk" download="Btech CSE 4-2 Semester Syllabus.pdf">Download Syllabus</a> <i class="fa fa-download"></i></button>
+                    <button class="btn blue"><a href="https://drive.google.com/drive/folders/1evsNmhimZI040EO-MbuQraIQuUa4Srjw" download="IV-II Semester.folder">Download Material</a> <i class="fa fa-download"></i></button>
+                </div>
+            </div>
+                    </div>
+                     <div class="content content2">
+                         <span class="anim"><b>All Semester's Previous Question Papers</b></span>
+            <!-- <p class="anim">Everyone should learn how to code, it teaches you how to think.....</p> -->
+            <div class="grid anim">         
+                <div class="item">
+                    <div class="item-lang">I-I Semester</div>
+                    <button class="btn green"><a href="https://drive.google.com/drive/folders/1gIe_OA2QrPu7TFYe0vL0MVr79BkG4p-V" download="">Previous Question Papers</a> <i class="fa fa-download"></i></button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">I-II Semester</div>
+                    <button class="btn green"><a href="https://drive.google.com/drive/folders/1gJ65ZU6e8LG_SUkvC_eza57-WutxXIV9" download="">Previous Question Papers</a> <i class="fa fa-download"></i></button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">II-I Semester</div>
+                    <button class="btn green"><a href="https://drive.google.com/drive/folders/1gKGTrVe4o3cACZ6s87qcwIzgTgJAlT5B" download="">Previous Question Papers</a> <i class="fa fa-download"></i></button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">II-II Semester</div>
+                    <button class="btn green"><a href="https://drive.google.com/drive/folders/1gF0GQOVwiIC0NHT2XN5Y3atA8NyRfzeN" download="">Previous Question Papers</a> <i class="fa fa-download"></i></button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">III-I Semester</div>
+                    <button class="btn green"><a href="https://drive.google.com/drive/folders/1gMdXrWzTSZ4VJPaRgw6L5lTzKYMt5ofe" download="">Previous Question Papers</a> <i class="fa fa-download"></i></button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">III-II Semester</div>
+                    <button class="btn green"><a href="https://drive.google.com/drive/folders/1gSh1cJJwyihjblQy9qrtPwBze_g1Pmpo" download="">Previous Question Papers</a> <i class="fa fa-download"></i></button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">IV-I Semester</div>
+                    <button class="btn green"><a href="https://drive.google.com/drive/folders/1ge_JyUWlXq9PV1sic_U-Obgc9DWSlthb" download="">Previous Question Papers</a> <i class="fa fa-download"></i></button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">IV-II Semester</div>
+                    <button class="btn green"><a href="https://drive.google.com/drive/folders/1giWC7ZO3sxHTxJwXvHotz77xzDMQmfV3" download="">Previous Question Papers</a> <i class="fa fa-download"></i></button>
+                </div>
+            </div>
+                     </div>
+                     <div class="content content3">
+                         <span class="anim"><b>All Semester's Lab Manuals</b></span>
+            <!-- <p class="anim">Everyone should learn how to code, it teaches you how to think.....</p> -->
+            <div class="grid anim">         
+                <div class="item">
+                    <div class="item-lang">I-I Semester</div>
+                    <button class="btn green"><a href="https://drive.google.com/drive/folders/1idpWqEgq_Eg7kzxiX3is6EEO0buL4Zx2" download="">Lab Manuals</a> <i class="fa fa-download"></i></button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">I-II Semester</div>
+                    <button class="btn green"><a href="https://drive.google.com/drive/folders/1inSPrnHnr_HeaiMl4w_QUurJeqG74qHJ" download="">Lab Manuals</a> <i class="fa fa-download"></i></button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">II-I Semester</div>
+                    <button class="btn green"><a href="https://drive.google.com/drive/folders/1iuPxahBpOSutJpL_dRLGEVOapQ-gu19E" download="">Lab Manuals</a> <i class="fa fa-download"></i></button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">II-II Semester</div>
+                    <button class="btn green"><a href="https://drive.google.com/drive/folders/1izAmuhgUt-t4Xyk7u5ud63SM01v33vcL" download="">Lab Manuals</a> <i class="fa fa-download"></i></button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">III-I Semester</div>
+                    <button class="btn green"><a href="https://drive.google.com/drive/folders/1j-T-qe_iQMNanjy5U40GnwIs8bOAt2jD" download="">Lab Manuals</a> <i class="fa fa-download"></i></button>
+                </div>
+                <div class="item">
+                    <div class="item-lang">III-II Semester</div>
+                    <button class="btn green"><a href="https://drive.google.com/drive/folders/1j2ExqzhMSt9heJ3ba_wD2H05TpZQ8ewS" download="">Lab Manuals</a> <i class="fa fa-download"></i></button>
+                </div>
+            </div>
+                     </div>
+                </section>
+            </div>
+        </div>
+        <div class="nav_menu" id="nav_menu">
+        <ul class="nav_list">
+            <li class="nav_item">
+                <a href="index.html" class="nav_link">
+                    <i class='bx bx-home'></i>
+                <span class="nav_name">Home</span>
+                </a>
+            </li>
+            <li class="nav_item">
+                <a href="index-reel.html" class="nav_link" ><img src="video-svg.svg" alt="">
+                    <span class="nav_name">Reels</span>
+                </a>
+            </li>
+            <li class="nav_item">
+                <a href="index-1.html" class="nav_link"><i class='bx bxs-videos'></i>
+                    <span class="nav_name">Videos</span>
+                </a>
+            </li>
+            <li class="nav_item" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">
+            <a href="#contact" class="nav_link"><i class='bx bx-message-square-detail'></i>
+                <span class="nav_name">Contact</span>
+                </a>
+            </li>
+            <li class="nav_item" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+                <a href="#about" class="nav_link"><i class='bx bxs-user'></i>
+                <span class="nav_name">Account</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+        </main>
+
+<!-- login form -->
+    <div id="id01" class="modal">
+    <form class="modal-content animate" action="" method="post" name="login-form">
+    <div class="imgcontaier">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close"title="Close Modal">&times;</span>
+    <img src="http://www.clker.com/cliparts/f/a/0/c/1434020125875430376profile.png"alt="Avatar" class="avatar">
+    </div>
+    <div class="con">
+      <label for="username"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="username" required>
+
+      <label for="password"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="passwords" required>
+        
+      <button type="submit" value="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="con" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<!-- Contact form -->
+<div id="id02" class="modal">
+  
+  <form class="modal-content animate" action="connect.php" method="POST">
+    <div class="imgcontaier">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+    <div class="con">
+      <label for="name"><b>Name</b></label>
+      <input type="text" placeholder="Your Full Name" name="name" required>
+
+      <label for="email"><b>Email</b></label>
+      <input type="email" placeholder="Valid Email Address" name="email" required>
+      <label for="text"><b>Message:</b></label>
+      <textarea type="text" name="massage" id="massage" cols="31" rows="8" placeholder="write here"></textarea>
+      <label for="subject"><b>Subject:</b></label>
+      <input type="text" name="subject" placeholder="Any Inquiry" required> </p>
+        
+      <button type="submit" value="submit">Send</button>
+    </div>
+  </form>
+</div>
+    <footer>
+        <div class="footercontainer">
+        <div class="icons">
+            <a href="https://www.facebook.com/PvkkInstituteOfTechnology?sfnsn=wiwspwa&mibextid=RUbZ1f"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://x.com/PVKKIT?s=20"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/pvkkitofficial?igsh=MWRmd202NXJ4NTl2"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.google.co.in/"><i class="fa-brands fa-google"></i></a>
+            <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footernav">
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="index-c.html">Contact Us</a></li>
+            <li><a href="#">Our Team</a></li>
+            </ul>
+        </div>
+        <div class="footerbottom">
+        <p>Copyright &copy; 2024; Designed by <span class="designer">Vidhyanand</span></p>
+        </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

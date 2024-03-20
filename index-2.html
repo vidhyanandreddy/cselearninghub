@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>ALL_SEMESTERS_NOTES</title>
+</head>
+<body>
+    <header>
+         <nav>
+        <div class="nav-center">
+            <!-- nav header -->
+            <div class="nav-header">
+                <!-- <img src="./logo.svg" class="logo" alt="logo" /> -->
+                <h1>CSE Learning Hub</h1>
+                <button class="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <!-- links -->
+            <ul class="links">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="index-01.html">Materials</a>
+                </li>
+                <li>
+                    <a href="index-11.html">Tech Stack</a>
+                </li>
+                <li>
+                    <a href="index-0.html">Roadmaps & Resources</a>
+                </li>
+            </ul>
+            <!-- social media -->
+            <ul class="social-icons">
+                <li>
+                    <a href="https://www.twitter.com">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com">
+                        <i class="fab fa-behance"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com">
+                        <i class="fab fa-sketch"></i>
+                    </a>
+                </li>
+                <li class="mode" onclick="dark()"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#3da0f0">
+<path d="M21.5 14.0784C20.3003 14.7189 18.9301 15.0821 17.4751 15.0821C12.7491 15.0821 8.91792 11.2509 8.91792 6.52485C8.91792 5.06986 9.28105 3.69968 9.92163 2.5C5.66765 3.49698 2.5 7.31513 2.5 11.8731C2.5 17.1899 6.8101 21.5 12.1269 21.5C16.6849 21.5 20.503 18.3324 21.5 14.0784Z" stroke="#3da0f0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></li>
+            </ul>
+        </div>
+    </nav>
+    </header>
+    <div class="scrollbar">
+        <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 24 24" fill="gold" class="injected-svg"
+            data-src="/icons/label-important-stroke-rounded.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img"
+            color="#000000">
+            <path d="M13 4H6.23456C3.79424 4 2.57407 4 2.14438 4.76649C2.13129 4.78984 2.11883 4.81353 2.10701 4.83754C1.71893 5.62592 2.41032 6.63129 3.7931 8.64204C4.89612 10.246 5.44763 11.048 5.4611 11.9555C5.46154 11.9852 5.46154 12.0148 5.4611 12.0445C5.44763 12.952 4.89612 13.754 3.7931 15.358C2.41032 17.3687 1.71893 18.3741 2.10701 19.1625C2.11883 19.1865 2.13129 19.2102 2.14438 19.2335C2.57407 20 3.79424 20 6.23456 20H13C14.9628 20 15.9443 20 16.7889 19.5777C17.6334 19.1554 18.2223 18.3703 19.4 16.8C21.1333 14.4889 22 13.3333 22 12C22 10.6667 21.1333 9.51111 19.4 7.2C18.2223 5.62972 17.6334 4.84458 16.7889 4.42229C15.9443 4 14.9628 4 13 4Z"
+                stroke="gold" stroke-width="1.5"></path>
+        </svg>
+        <marquee>&#127775 All Semester's Syllabus copies are available here!...and Materials also available!... &#127775 You can Download it....</marquee>
+    </div>
+
+   <div class="wrapper">
+            <div class="lablel">
+                <input type="radio" name="slider" id="materials" checked>
+                <input type="radio" name="slider" id="pqp">
+                <input type="radio" name="slider" id="manuals">
+                <!-- <input type="radio" name="slider" id="contact"> -->
+                <div class="subnav">
+                    <label for="materials" class="materials">MID-1</label>
+                    <label for="pqp" class="pqp">MID-2</label>
+                    <label for="manuals" class="manuals">SEMESTER</label>
+                    <!-- <label for="contact" class="contact">Software Engineer</label> -->
+                    <div class="slider"></div>
+                </div>
+                <section>
+                    <div class="content content1">
+                <form action="" method="post" name="mid1-marks">
+      <div class="cont">
+      <label for="username"><b>Name</b></label>
+      <input type="text" placeholder="Enter Full Name" name="name" required>
+      <label for="Rollnumber"><b>Rollnumber</b></label>
+      <input type="text" placeholder="Enter Your Rollnumber" name="Rollnumber" required>
+      <label for="branch"><b>Branch</b></label>
+      <input type="text" placeholder="Enter Your Branch" name="branch" required>
+      <label for="year"><b>Year</b></label>
+      <input type="text" placeholder="Enter Your Year" name="Year" required>
+      <hr>
+      <h3>Enter Your MID-1 Marks</h3><hr>
+      <label for="DSSM"><b>DSSM </b></label>
+      <input type="text" placeholder="Enter Your Marks" name="DSSM" required>
+      <label for="DBMS"><b>DBMS</b></label>
+      <input type="text" placeholder="Enter Your Marks" name="DBMS" required>
+      <label for="OS"><b>OS</b></label>
+      <input type="text" placeholder="Enter Your Marks" name="OS" required>
+      <label for="SE"><b>SE</b></label>
+      <input type="text" placeholder="Enter Your Marks" name="SE" required>
+      <label for="MEFA"><b>MEFA</b></label>
+      <input type="text" placeholder="Enter Your Marks" name="MEFA" required>
+      <button type="submit" value="submit">Submit</button>
+    </div></form>
+                    </div>
+                     <div class="content content2">
+                        <form action="" method="post" name="mid2-marks">
+      <div class="cont mid">
+      <label for="username"><b>Name</b></label>
+      <input type="text" placeholder="Enter Full Name" name="name" required>
+      <label for="Rollnumber"><b>Rollnumber</b></label>
+      <input type="text" placeholder="Enter Your Rollnumber" name="Rollnumber" required>
+      <label for="branch"><b>Branch</b></label>
+      <input type="text" placeholder="Enter Your Branch" name="branch" required>
+      <label for="year"><b>Year</b></label>
+      <input type="text" placeholder="Enter Your Year" name="Year" required>
+      <hr>
+      <h3>Enter Your MID-2 Marks</h3><hr>
+      <label for="DSSM"><b>DSSM </b></label>
+      <input type="text" placeholder="Enter Your Marks" name="DSSM" required>
+      <label for="DBMS"><b>DBMS</b></label>
+      <input type="text" placeholder="Enter Your Marks" name="DBMS" required>
+      <label for="OS"><b>OS</b></label>
+      <input type="text" placeholder="Enter Your Marks" name="OS" required>
+      <label for="SE"><b>SE</b></label>
+      <input type="text" placeholder="Enter Your Marks" name="SE" required>
+      <label for="MEFA"><b>MEFA</b></label>
+      <input type="text" placeholder="Enter Your Marks" name="MEFA" required>
+      <button type="submit" value="submit">Submit</button>
+    </div></form>
+                     </div>
+                     <div class="content content3">
+     <form action="" method="post" name="semester-marks">
+      <div class="cont semester">
+      <label for="username"><b>Name</b></label>
+      <input type="text" placeholder="Enter Full Name" name="name" required>
+      <label for="Rollnumber"><b>Rollnumber</b></label>
+      <input type="text" placeholder="Enter Your Rollnumber" name="Rollnumber" required>
+      <label for="branch"><b>Branch</b></label>
+      <input type="text" placeholder="Enter Your Branch" name="branch" required>
+      <label for="year"><b>Year</b></label>
+      <input type="text" placeholder="Enter Your Year" name="Year" required>
+      <hr>
+      <h3>Enter Your Semester Marks</h3><hr>
+      <label for="DSSM"><b>DSSM </b></label>
+      <input type="text" placeholder="Enter Your Marks" name="DSSM" required>
+      <label for="DBMS"><b>DBMS</b></label>
+      <input type="text" placeholder="Enter Your Marks" name="DBMS" required>
+      <label for="OS"><b>OS</b></label>
+      <input type="text" placeholder="Enter Your Marks" name="OS" required>
+      <label for="SE"><b>SE</b></label>
+      <input type="text" placeholder="Enter Your Marks" name="SE" required>
+      <label for="MEFA"><b>MEFA</b></label>
+      <input type="text" placeholder="Enter Your Marks" name="MEFA" required>
+      <label for="percentage"><b> Total Percentage</b></label>
+      <input type="text" placeholder="Enter Your Percentage" name="percentage" required>
+      <button type="submit" value="submit">Submit</button>
+    </div></form>
+                     </div>
+                </section>
+            </div>
+        </div>
+        <div class="nav_menu" id="nav_menu">
+        <ul class="nav_list">
+            <li class="nav_item">
+                <a href="index.html" class="nav_link active-link">
+                    <i class='bx bx-home'></i>
+                <span class="nav_name">Home</span>
+                </a>
+            </li>
+            <li class="nav_item">
+                <a href="index-reel.html" class="nav_link" ><img src="video-svg.svg" alt="">
+                    <span class="nav_name">Reels</span>
+                </a>
+            </li>
+            <li class="nav_item">
+                <a href="index-1.html" class="nav_link"><i class='bx bxs-videos'></i>
+                    <span class="nav_name">Videos</span>
+                </a>
+            </li>
+            <li class="nav_item" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">
+            <a href="#contact" class="nav_link"><i class='bx bx-message-square-detail'></i>
+                <span class="nav_name">Contact</span>
+                </a>
+            </li>
+            <li class="nav_item" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+                <a href="#about" class="nav_link"><i class='bx bxs-user'></i>
+                <span class="nav_name">Account</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+        </main>
+
+<!-- login form -->
+    <div id="id01" class="modal">
+    <form class="modal-content animate" action="" method="post" name="login-form">
+    <div class="imgcontaier">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close"title="Close Modal">&times;</span>
+    <img src="http://www.clker.com/cliparts/f/a/0/c/1434020125875430376profile.png"alt="Avatar" class="avatar">
+    </div>
+    <div class="con">
+      <label for="username"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="username" required>
+
+      <label for="password"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="passwords" required>
+        
+      <button type="submit" value="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="con" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<!-- Contact form -->
+<div id="id02" class="modal">
+  
+  <form class="modal-content animate" action="connect.php" method="POST">
+    <div class="imgcontaier">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+    <div class="con">
+      <label for="name"><b>Name</b></label>
+      <input type="text" placeholder="Your Full Name" name="name" required>
+
+      <label for="email"><b>Email</b></label>
+      <input type="email" placeholder="Valid Email Address" name="email" required>
+      <label for="text"><b>Message:</b></label>
+      <textarea type="text" name="massage" id="massage" cols="31" rows="8" placeholder="write here"></textarea>
+      <label for="subject"><b>Subject:</b></label>
+      <input type="text" name="subject" placeholder="Any Inquiry" required> </p>
+        
+      <button type="submit" value="submit">Send</button>
+    </div>
+  </form>
+</div>
+    <footer>
+        <div class="footercontainer">
+        <div class="icons">
+            <a href="https://www.facebook.com/PvkkInstituteOfTechnology?sfnsn=wiwspwa&mibextid=RUbZ1f"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://x.com/PVKKIT?s=20"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/pvkkitofficial?igsh=MWRmd202NXJ4NTl2"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.google.co.in/"><i class="fa-brands fa-google"></i></a>
+            <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footernav">
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="index-c.html">Contact Us</a></li>
+            <li><a href="#">Our Team</a></li>
+            </ul>
+        </div>
+        <div class="footerbottom">
+        <p>Copyright &copy; 2024; Designed by <span class="designer">Vidhyanand</span></p>
+        </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
